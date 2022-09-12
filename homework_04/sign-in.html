@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In Form | Сало Сергей | HW 4</title>
+</head>
+
+<body>
+  <h1>Авторизация</h1>
+
+  <div>
+    <a href="index.html" target="_blank">Главная</a>
+    <a href="sign-up.html" target="_blank">Регистрация</a>
+    <a href="sign-in.html" target="_blank">Авторизация</a>
+    <a href="search.html" target="_blank">Поиск</a>
+  </div>
+
+  <form action="https://tests.fomenko.top/echo/index.php" method="post">
+    <fieldset>
+      <legend>Введите данные для авторизации</legend>
+      <div>
+        <label for="sign-up-email">Email:</label>
+        <input id="sign-up-email" name="email" type="email" placeholder="user@gmail.com" required autofocus>
+      </div>
+
+      <div>
+        <label for="sign-up-password">Пароль:</label>
+        <input id="sign-up-password" name="password" type="password" required>
+      </div>
+
+      <div>
+        <label for="sign-up-remeber-password">Запомнить пароль:</label>
+        <input type="checkbox" id="sign-up-remeber-password" name="remember-password">
+      </div>
+
+      <div>
+        <input type="submit" value="Авторизироваться">
+        <input type="reset" value="Отменить">
+      </div>
+    </fieldset>
+  </form>
+</body>
+
+</html>

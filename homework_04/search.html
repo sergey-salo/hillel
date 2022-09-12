@@ -9,44 +9,50 @@
 </head>
 
 <body>
-  <h1>Поиск</h1>
-
   <div>
-    <a href="index.html" target="_blank">Главная</a>
-    <a href="sign-up.html" target="_blank">Регистрация</a>
-    <a href="sign-in.html" target="_blank">Авторизация</a>
-    <a href="search.html" target="_blank">Поиск</a>
+    <a href="index.html">Главная</a>
+    <a href="sign-up.html">Регистрация</a>
+    <a href="sign-in.html">Авторизация</a>
+    <a href="search.html">Поиск</a>
   </div>
+
+  <h1>Поиск</h1>
 
   <form action="https://tests.fomenko.top/echo/index.php" method="post">
     <fieldset>
-      <legend>Поиск автомобиля по параметрам</legend>
-      <div>
-        Тип кузова:
+      <legend>Тип кузова</legend>
 
+      <div>
         <input type="checkbox" name="sedan" id="search-body-type-sedan">
         <label for="search-body-type-sedan">Седан</label>
-
+      </div>
+      <div>
         <input type="checkbox" name="hatchback" id="search-body-type-hatchback">
         <label for="search-body-type-hatchback">Хетчбек</label>
-
+      </div>
+      <div>
         <input type="checkbox" name="coupe" id="search-body-type-coupe">
         <label for="search-body-type-coupe">Купе</label>
-
+      </div>
+      <div>
         <input type="checkbox" name="wagon" id="search-body-type-wagon">
         <label for="search-body-type-wagon">Универсал</label>
-
+      </div>
+      <div>
         <input type="checkbox" name="minivan" id="search-body-type-minivan">
         <label for="search-body-type-minivan">Минивен</label>
-
+      </div>
+      <div>
         <input type="checkbox" name="suv" id="search-body-type-suv">
         <label for="search-body-type-suv">Внедорожник/Кроссовер</label>
-
+      </div>
+      <div>
         <input type="checkbox" name="pickup" id="search-body-type-pickup">
         <label for="search-body-type-pickup">Пикап</label>
       </div>
+    </fieldset>
 
-
+    <fieldset>
       <div>
         <label for="search-brand">Марка авто:</label>
         <select name="brand" id="search-brand">
@@ -62,7 +68,9 @@
           <option value="volkswagen">Volkswagen</option>
         </select>
       </div>
+    </fieldset>
 
+    <fieldset>
       <div>
         <label for="search-country">Страна производитель:</label>
         <select name="manufacturer-country" id="search-country">
@@ -72,55 +80,71 @@
           <option value="japan">Япония</option>
         </select>
       </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Цена</legend>
 
       <div>
-        Цена
-
         <label for="search-price-from">от:</label>
         <input type="number" name="price-from" id="search-price-from" min="50" step="100" placeholder="1000">
-
+      </div>
+      <div>
         <label for="search-price-to">до:</label>
         <input type="number" name="price-to" id="search-price-to" min="50" step="100" placeholder="20000">
       </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Год выпуска</legend>
 
       <div>
-        Год выпуска
-
         <label for="search-year-from">от:</label>
         <input type="number" name="manufacture-year-from" id="search-year-from" min="1970" max="2022" step="1"
           placeholder="2010">
-
+      </div>
+      <div>
         <label for="search-year-to">до:</label>
         <input type="number" name="manufacture-year-to" id="search-year-to" min="1970" max="2022" step="1"
           placeholder="2022">
       </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Тип топлива</legend>
 
       <div>
-        Тип топлива:
-
         <input type="checkbox" name="fuel-petrol" id="search-fuel-petrol">
         <label for="search-fuel-petrol">Бензин</label>
-
+      </div>
+      <div>
         <input type="checkbox" name="fuel-diesel" id="search-fuel-diesel">
         <label for="search-fuel-diesel">Дизель</label>
-
+      </div>
+      <div>
         <input type="checkbox" name="fuel-gas" id="search-fuel-gas">
         <label for="search-fuel-gas">Газ</label>
-
+      </div>
+      <div>
         <input type="checkbox" name="fuel-gas-petrol" id="search-fuel-gas-petrol">
         <label for="search-fuel-gas-petrol">Газ / Бензин</label>
       </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Тип коробки передач</legend>
 
       <div>
-        Тип коробки передач:
-
         <input type="checkbox" name="gearboxes-manual" id="search-gearboxes-manual">
         <label for="search-gearboxes-manual">Ручная / Механика</label>
-
+      </div>
+      <div>
         <input type="checkbox" name="gearboxes-automatic" id="search-gearboxes-automatic">
         <label for="search-gearboxes-automatic">Автомат</label>
       </div>
+    </fieldset>
 
+    <fieldset>
       <div>
         <label for="search-color">Цвет:</label>
         <select name="car-color" id="search-color">
@@ -136,72 +160,55 @@
           <option value="black">Черный</option>
         </select>
       </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Комфорт</legend>
 
       <div>
-        Комфорт:
-
         <input type="checkbox" name="comfort-sunroof" id="search-comfort-sunroof">
         <label for="search-comfort-sunroof">Люк</label>
-
+      </div>
+      <div>
         <input type="checkbox" name="comfort-leather-interior" id="search-comfort-leather-interior">
         <label for="search-comfort-leather-interior">Кожанный салон</label>
-
+      </div>
+      <div>
         <input type="checkbox" name="comfort-air-conditioner" id="search-comfort-air-conditioner">
         <label for="search-comfort-air-conditioner">Кондиционер</label>
-
+      </div>
+      <div>
         <input type="checkbox" name="comfort-climate-control" id="search-comfort-climate-control">
         <label for="search-comfort-climate-control">Климат контроль</label>
-
+      </div>
+      <div>
         <input type="checkbox" name="comfort-heated-windshield" id="search-comfort-heated-windshield">
         <label for="search-comfort-heated-windshield">Подогрев лобового стекла</label>
-
+      </div>
+      <div>
         <input type="checkbox" name="comfort-autonomous-heater" id="search-comfort-autonomous-heater">
         <label for="search-comfort-autonomous-heater">Автономный обогреватель</label>
       </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Состояние</legend>
 
       <div>
-        Состояние:
-        <div>
-          Участие в ДТП:
-          <input type="checkbox" name="state-car-accident-true" id="search-state-car-accident-true">
-          <label for="search-state-car-accident-true">Была</label>
-
-          <input type="checkbox" name="state-car-accident-false" id="search-state-car-accident-false">
-          <label for="search-state-car-accident-false">Не была</label>
-        </div>
-
-        <div>
-          Кредит:
-          <input type="checkbox" name="state-credit-true" id="search-state-credit-true">
-          <label for="search-state-credit-true">В кредите</label>
-
-          <input type="checkbox" name="state-credit-false" id="search-state-credit-false">
-          <label for="search-state-credit-false">Нет кредита</label>
-        </div>
-
-        <div>
-          Растаможенные:
-          <input type="checkbox" name="state-customs-cleared-true" id="search-state-customs-cleared-true">
-          <label for="search-state-customs-cleared-true">Растаможенные</label>
-
-          <input type="checkbox" name="state-customs-cleared-false" id="search-state-customs-cleared-false">
-          <label for="search-state-customs-cleared-false">Не Растаможенные</label>
-        </div>
-
-
-        <!-- <label for="search-state">Состояние:</label>
-        <select name="state" id="search-state" multiple size="4">
-          <optgroup label="Участие в ДТП">
-            <option value="car-accident-true">Была в ДТП</option>
-            <option value="car-accident-false">Не была в ДТП</option>
-          </optgroup>
-          <optgroup label="Растаможенные">
-            <option value="customs-cleared-true">Растаможенные</option>
-            <option value="customs-cleared-false">Нерастаможенные</option>
-          </optgroup>
-        </select> -->
+        <input type="checkbox" name="state-car-accident" id="search-state-car-accident">
+        <label for="search-state-car-accident">Была в ДТП</label>
       </div>
+      <div>
+        <input type="checkbox" name="state-credit" id="search-state-credit">
+        <label for="search-state-credit">В кредите</label>
+      </div>
+      <div>
+        <input type="checkbox" name="state-customs-cleared-false" id="search-state-customs-cleared-false">
+        <label for="search-state-customs-cleared-false">Не растаможенные</label>
+      </div>
+    </fieldset>
 
+    <fieldset>
       <div>
         <input type="submit" value="Искать">
         <input type="reset" value="Сбросить фильтры">

@@ -1,0 +1,81 @@
+.body-style {
+  background-color: #8cccdd;
+}
+
+h1 {
+  background-color: blueviolet;
+}
+
+.class-style {
+  background-color: blue;
+  color: yellow;
+}
+
+#form {
+  background-color: #a8ab54;
+}
+
+h1 + p {
+  background-color: #ffe7bd;
+}
+
+[type="text"] {
+  background-color: #f9cc9d;
+}
+
+div label {
+  background-color: #1e1e1e;
+}
+
+li:nth-of-type(3n + 2) {
+  background-color: #7cfc00;
+}
+
+li:nth-of-type(3n + 1) {
+  background-color: #00ff00;
+}
+
+li:nth-of-type(3n) {
+  background-color: #32cd32;
+}
+
+.paragraph::after {
+  content: "по классу и псевдоэлементу, вес 11";
+  background-color: grey;
+}
+
+/* последовательность */
+ul + h3 + p {
+  background-color: #20b2aa;
+  color: royalblue;
+}
+
+/* дочерние */
+div > span {
+  background: #ff8c00;
+}
+
+/* вложенность */
+div > div > p {
+  background-color: #7b68ee;
+}
+
+div p {
+  background-color: #f9cc9d;
+}
+
+.div-1 span {
+  background-color: #00bfff;
+}
+
+.div-1 .div-2 .div-3 span {
+  background-color: #4682b4;
+}
+
+h4 {
+  background-color: #00ffff !important;
+}
+
+h4 {
+  background-color: #ff1493;
+}

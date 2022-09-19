@@ -1,0 +1,22 @@
+.navbar-link {
+  text-decoration: none;
+  color: grey;
+  font-size: 20px;
+  border: 5px outset grey;
+  background-color: #e0ffff;
+  padding: 5px;
+  margin: 5px;
+  display: block;
+  transition: 0.5s;
+}
+
+.navbar-link:hover {
+  margin-left: 10px;
+  margin-right: -5px;
+  background-color: #b0c4de;
+  color: #ff0000;
+}
+
+.menu {
+  width: 300px;
+}

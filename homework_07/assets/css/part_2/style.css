@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+.item {
+  border: 1px solid;
+  width: calc(33.3333% - 20px);
+  margin: 15px 10px;
+  background-color: #afeeee;
+  float: left;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item-img {
+  height: 280px;
+  align-items: center;
+  display: flex;
+}
+
+p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.item-description {
+  height: calc(100% - 310px);
+  padding: 15px 15px;
+  align-items: center;
+}

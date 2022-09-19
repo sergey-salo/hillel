@@ -1,0 +1,18 @@
+.navbar-link {
+  background-color: #808080;
+  color: black;
+  border: 2px solid;
+  display: block;
+  margin: 5px;
+  text-decoration: none;
+  padding: 5px;
+  margin: 5px;
+}
+
+.navbar {
+  width: 300px;
+}
+
+.navbar-link:hover {
+  background-color: #d3d3d3;
+}

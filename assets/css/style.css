@@ -8,6 +8,7 @@
   margin: 5px;
   display: block;
   transition: 0.5s;
+  border-radius: 10px;
 }
 
 .navbar-link:hover {

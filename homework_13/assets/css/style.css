@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrap {
+  margin-top: 200px;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+.cube {
+  margin: auto;
+  position: relative;
+  height: 200px;
+  width: 200px;
+  transform-style: preserve-3d;
+  animation: cube-rotate 50s infinite linear;
+}
+
+.cube > div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 2px solid green;
+  transition: 0.2s ease-in;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #7aec89;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.front .cell {
+  background-color: red;
+}
+
+.back .cell {
+  background-color: deeppink;
+}
+
+.top .cell {
+  background-color: blue;
+}
+
+.bottom .cell {
+  background-color: green;
+}
+
+.left .cell {
+  background-color: orange;
+}
+
+.right .cell {
+  background-color: yellow;
+}
+
+.front {
+  transform: translateZ(100px);
+}
+
+.back {
+  transform: translateZ(-100px) rotateY(180deg);
+}
+
+.top {
+  transform: rotateX(90deg) translateY(-100px);
+  transform-origin: top center;
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateY(100px);
+  transform-origin: bottom center;
+}
+
+.left {
+  transform: rotateY(-90deg) translateX(-100px);
+  transform-origin: left center;
+}
+
+.right {
+  transform: rotateY(90deg) translateX(100px);
+  transform-origin: right center;
+}
+
+@keyframes cube-rotate {
+  from {
+    transform: rotateX(0deg) rotate(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotate(3600deg);
+  }
+}
+
+.wrap:hover .front {
+  transform: translateZ(200px);
+}
+
+.wrap:hover .back {
+  transform: translateZ(-200px) rotateY(180deg);
+}
+
+.wrap:hover .top {
+  transform: rotateX(90deg) translateY(-100px) translateZ(100px);
+}
+
+.wrap:hover .bottom {
+  transform: rotateX(-90deg) translateY(100px) translateZ(100px);
+}
+
+.wrap:hover .left {
+  transform: rotateY(-90deg) translateX(-100px) translateZ(100px);
+}
+
+.wrap:hover .right {
+  transform: rotateY(90deg) translateX(100px) translateZ(100px);
+}

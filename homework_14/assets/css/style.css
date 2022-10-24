@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #43a047;
+  color: #ffffff;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Fredoka One", cursive;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}

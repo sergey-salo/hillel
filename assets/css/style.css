@@ -25,6 +25,7 @@ ul {
 .navbar-item {
   width: 250px;
   height: 100px;
+  /* text-align: center; */
 }
 
 .navbar-link {
